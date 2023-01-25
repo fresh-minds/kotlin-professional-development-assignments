@@ -7,3 +7,5 @@ To run all tests in a specific module:
 
 `./gradlew :module-01:test`
 
+## TODO
+- [ ] Setup renovate/dependabot?
