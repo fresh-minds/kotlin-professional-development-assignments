@@ -13,5 +13,5 @@ fun nameOfSubSubFolder(folder: Folder?): String {
             }
         }
     }
-    throw IllegalArgumentException("nl.freshminds.Folder not found")
+    throw IllegalArgumentException("Folder not found")
 }
