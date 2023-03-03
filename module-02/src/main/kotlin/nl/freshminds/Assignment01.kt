@@ -1,10 +1,9 @@
 package nl.freshminds
 
 /**
- * Implement the [convertToLongOrZero] function so that the tests in 'Assignment01Test.kt' pass.
+ * Implement [convertToLongOrZero].
  *
- * Requirements:
- * - Return 0 if [optionalNumber] is null, return the equivalent of [optionalNumber] as a long otherwise
+ * Return 0 if [optionalNumber] is null, return the equivalent of [optionalNumber] as a Long otherwise
  */
 fun convertToLongOrZero(optionalNumber: Int?): Long {
     TODO()
