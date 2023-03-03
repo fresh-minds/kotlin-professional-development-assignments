@@ -1,5 +1,9 @@
 # Kotlin Foundation Assignments
 
+![example workflow](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/gradle.yml/badge.svg)
+
+
+
 ## Building the project
 `./gradlew build -x test`
 
