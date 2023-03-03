@@ -19,10 +19,3 @@ fun fizzBuzz(input: Int): String {
 fun printFizzBuzzNumbers(n: Int) {
     TODO()
 }
-
-/**
- * Bonus assignments/questions:
- * - Decompile your solutions to see what the Java equivalent would look like
- * - Can you come up with different implementations for the functions above?
- * - Are you able to write the functions above as single expression functions?
- */
