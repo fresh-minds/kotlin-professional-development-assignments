@@ -9,3 +9,6 @@ To run all tests in a specific module:
 
 ## TODO
 - [ ] Setup renovate/dependabot?
+- [ ] Add requirements (java 11)
+- [ ] Module descriptions
+- [ ] Refer to solutions branch
