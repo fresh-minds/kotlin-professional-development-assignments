@@ -12,3 +12,4 @@ To run all tests in a specific module:
 - [ ] Add requirements (java 11)
 - [ ] Module descriptions
 - [ ] Refer to solutions branch
+- [ ] Setup build pipeline for solutions branch
