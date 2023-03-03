@@ -1,4 +1,4 @@
-# Kotlin Foundation Puzzlers
+# Kotlin Foundation Assignments
 
 ## Building the project
 `./gradlew build -x test`
