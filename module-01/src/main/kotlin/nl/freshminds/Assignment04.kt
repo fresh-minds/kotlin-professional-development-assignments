@@ -6,6 +6,6 @@ package nl.freshminds
  * Implement [divisibleByAllNumbersFrom1to20] to find the smallest number that is divisible by each number from
  * 1 to 20 without any remainder.
  */
-fun divisibleByAllNumbersFrom1to20(): Long {
+fun divisibleByAllNumbersFrom1to20(): Int {
     TODO()
 }

@@ -6,6 +6,6 @@ package nl.freshminds
  *
  * Implement [palindromicNumber] to find the largest palindrome made from the product of two 3-digit numbers.
  */
-fun palindromicNumber(): Long {
+fun palindromicNumber(): Int {
     TODO()
 }
