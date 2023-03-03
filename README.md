@@ -1,6 +1,7 @@
 # Kotlin Foundation Assignments
 
-![example workflow](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/gradle.yml/badge.svg)
+![example workflow](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/build-main.yml/badge.svg)
+![example workflow](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/build-and-test-solutions.yml/badge.svg)
 
 
 
