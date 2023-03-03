@@ -1,5 +1,8 @@
 # Kotlin Foundation Assignments
 
+![assignments badge](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/build-main.yml/badge.svg)
+![solutions badge](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/build-and-test-solutions.yml/badge.svg)
+
 ## Building the project
 `./gradlew build -x test`
 
