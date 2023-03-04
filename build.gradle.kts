@@ -20,18 +20,21 @@ allprojects {
         }
     }
 
-    tasks.withType<KotlinCompile> {
-        kotlinOptions.jvmTarget = "11"
-    }
+    tasks {
+        withType<KotlinCompile> {
+            kotlinOptions.jvmTarget = "11"
+        }
 
-    tasks.getByName<Test>("test") {
-        useJUnitPlatform()
+        getByName<Test>("test") {
+            useJUnitPlatform()
+        }
     }
 
     dependencies {
+        implementation(kotlin("stdlib-jdk8"))
+
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
         testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-        implementation(kotlin("stdlib-jdk8"))
         testImplementation(kotlin("test"))
     }
 }
