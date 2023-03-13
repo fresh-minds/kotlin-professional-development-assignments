@@ -12,7 +12,7 @@ training.
 The higher the module number, the more prerequisite knowledge is required to effectively solve the assignments.
 
 The assignments are just Kotlin files. They can be found under `src/main`. For most assignments a test file is
-available under `src/test`. After solving an assignment you can run the tests file to validate your solution.
+available under `src/test`. After solving an assignment you can run the tests to validate your solution.
 
 Solutions for every assignment can be found in the `solutions` branch. Since there usually are multiple ways to solve
 an assignment it's a good idea to compare your own solutions against the `solutions` branch.
@@ -40,12 +40,16 @@ version of Gradle, downloading it beforehand if necessary.
 
 Gradle's `build` command builds and tests the project:
 
-`./gradlew build`
+```
+./gradlew build
+```
 
 Running `build` on the `main` branch will result in test errors. This is expected. The tests won't pass until the
 assignments are finished. To make the build pass, simply exclude the tests:
 
-`./gradlew build -x test`
+```
+./gradlew build -x test
+```
 
 ### Testing
 Starting tests directly from the IDE (using the 'play' buttons) is the most convenient. But you can also use the
@@ -53,15 +57,21 @@ wrapper if you want.
 
 Run all tests in all modules:
 
-`./gradlew test`
+```
+./gradlew test
+```
 
 Run all tests in a single module:
 
-`./gradlew :module-01:test`
+```
+./gradlew :module-01:test
+```
 
 Run a single test file:
 
-`./gradlew :module-01:test --tests '*Assignment02Test'`
+```
+./gradlew :module-01:test --tests '*Assignment02Test'
+```
 
 ## TODO
 
