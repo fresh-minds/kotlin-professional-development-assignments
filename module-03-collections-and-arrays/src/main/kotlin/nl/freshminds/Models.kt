@@ -44,7 +44,7 @@ data class Result(
     @SerialName("Driver") val driver: Driver,
     @SerialName("Constructor") val constructor: Constructor,
     @SerialName("Time") val time: Time? = null,
-    @SerialName("FastestLap") val fastestLap: FastestLap
+    @SerialName("FastestLap") val fastestLap: FastestLap? = null
 )
 
 @Serializable
@@ -70,7 +70,8 @@ data class Time(
 @Serializable
 data class FastestLap(
     val rank: Int,
-    val lap: Int
+    val lap: Int,
 )
+
 
 // http://ergast.com/mrd/methods/results/
