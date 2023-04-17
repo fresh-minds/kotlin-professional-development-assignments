@@ -1,11 +1,6 @@
 package nl.freshminds
 
 /**
- * Refactor excercise to avoid overloaded methods
- * Refactor excersise to avoid mixed up String fields
- */
-
-/**
  * There are no tests available for this assignment.
  *
  * 1. Create a data class named Actor with the following properties:

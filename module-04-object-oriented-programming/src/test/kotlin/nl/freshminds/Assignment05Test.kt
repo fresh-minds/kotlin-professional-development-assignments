@@ -42,7 +42,6 @@ class Assignment05Test {
     fun `capitalizeWords extension function`() {
         // TODO uncomment these asserts after implementing the extension function
 //        assertEquals("Hello World", "hello world".capitalizeWords())
-//        assertEquals("single", "Single".capitalizeWords())
 //        assertEquals("This Is Amazing", "this is amazing".capitalizeWords())
     }
 }
