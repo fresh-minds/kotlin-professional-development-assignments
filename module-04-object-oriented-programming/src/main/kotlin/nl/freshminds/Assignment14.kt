@@ -1,5 +1,7 @@
 package nl.freshminds
 
+import java.math.BigDecimal
+
 /**
  * 1. Create a new data class [Pizza] with a few properties like [name], [size], [toppings], and [price].
  *
@@ -16,3 +18,39 @@ package nl.freshminds
  * 4. Mark the Pizza constructor as private so all pizza creation goes through the
  * companion object's factory methods.
  */
+
+data class Pizza private constructor(
+    val name: String,
+    val size: Int,
+    val toppings: List<String>,
+    val price: BigDecimal
+) {
+    companion object {
+        fun createCheesePizza() = Pizza(
+            name = "4 Fromaggi",
+            size = 30,
+            toppings = listOf("Cheese", "Cheese", "Cheese"),
+            price = BigDecimal.TEN
+        )
+
+        fun createPepperoniPizza() = Pizza(
+            name = "Pepperoni",
+            size = 35,
+            toppings = listOf("Pepperoni", "Mushrooms", "Cheese"),
+            price = BigDecimal("12.34")
+        )
+
+        fun createVeggiePizza() = Pizza(
+            name = "Veggie",
+            size = 15,
+            toppings = listOf("Mushrooms", "Carrots", "Broccoli"),
+            price = BigDecimal("2.50")
+        )
+    }
+}
+
+fun main() {
+    println(Pizza.createCheesePizza())
+    println(Pizza.createPepperoniPizza())
+    println(Pizza.createVeggiePizza())
+}

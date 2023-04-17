@@ -17,3 +17,32 @@ package nl.freshminds
  * 6. Define a main function and create a list of cameras by creating different variants of [Iphone] and [Dslr].
  * Loop over each element in this list and call both [takePicture] and [autoAdjustWhiteBalance] for each element.
  */
+interface Camera {
+    fun takePicture()
+    fun autoAdjustWhiteBalance()
+}
+
+class Iphone(private val type: String): Camera {
+    override fun takePicture() = println("Took picture with an Iphone $type")
+
+    override fun autoAdjustWhiteBalance() = println("Auto adjusted white balance on Iphone $type")
+}
+
+class Dslr(private val model: String) : Camera {
+    override fun takePicture() = println("Took picture with an $model")
+
+    override fun autoAdjustWhiteBalance() = println("Auto adjusted white balance on $model")
+}
+
+fun main() {
+   listOf(
+        Iphone("11"),
+        Iphone("12"),
+        Iphone("13"),
+        Dslr("Canon D600"),
+        Dslr("Nikon D7500")
+    ).forEach { camera ->
+       camera.autoAdjustWhiteBalance()
+       camera.takePicture()
+   }
+}

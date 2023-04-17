@@ -23,6 +23,62 @@ package nl.freshminds
  * the species. For example: Eagle=20, Swan=25, and Penguin=15. If no logic is provided for a species
  * the method should return the result of the [calculateAverageLifeSpan] from the [Animal] superclass.
  *
- * 7. Create a main function that creates several [Animal], [Mammal], and [Bird] objects.
- * Print out their name, age, species, and average lifespan.
+ * 7. Create a main function that creates several [Animal], [Mammal], and [Bird] objects and places them in a list
+ * of animals [List<Animal].
+ *
+ * 8. Iterate over the elements in the list and print the name, age, species, and average lifespan.
  */
+open class Animal(
+    val name: String,
+    val age: Int,
+    val species: String
+) {
+    open fun calculateAverageLifeSpan(): Int {
+        return 10
+    }
+}
+
+class Mammal(
+    name: String,
+    age: Int,
+    species: String,
+    val type: String
+) : Animal (name, age, species) {
+    override fun calculateAverageLifeSpan(): Int {
+        return when(species) {
+            "Elephant" -> 70
+            "Lion" -> 15
+            "Gorilla" -> 35
+            else -> super.calculateAverageLifeSpan()
+        }
+    }
+}
+
+class Bird(
+    name: String,
+    age: Int,
+    species: String,
+    val type: String,
+    val canFly: Boolean
+) : Animal (name, age, species) {
+    override fun calculateAverageLifeSpan(): Int {
+        return when(species) {
+            "Eagle" -> 20
+            "Swan" -> 25
+            "Penguin" -> 15
+            else -> super.calculateAverageLifeSpan()
+        }
+    }
+}
+
+fun main() {
+    val animals = listOf(
+        Animal("Howler", 8, "Gray wolf"),
+        Mammal("Dumbo", 27, "Elephant", "Herbivore"),
+        Bird("Road Runner", 12, "Penguin", "flightless bird", false)
+    )
+
+    animals.forEach { animal ->
+        println("name = ${animal.name}, age = ${animal.age}, species = ${animal.species}, lifespan = ${animal.calculateAverageLifeSpan()}")
+    }
+}

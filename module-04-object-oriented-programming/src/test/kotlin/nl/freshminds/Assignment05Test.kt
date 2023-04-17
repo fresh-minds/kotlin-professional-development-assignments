@@ -3,7 +3,6 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import java.time.LocalDate
-import kotlin.math.exp
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 
@@ -15,8 +14,7 @@ class Assignment05Test {
         val yesterday = today.minusDays(1)
         val tomorrow = today.plusDays(1)
 
-        // TODO uncomment this assert after implementing the extension function
-        // assertTrue(today.isBetween(yesterday, tomorrow))
+        assertTrue(today.isBetween(yesterday, tomorrow))
     }
 
     @Test
@@ -24,25 +22,21 @@ class Assignment05Test {
         val input = listOf(1, 2, 3, 4, 5)
         val expected = listOf(1, 4, 9, 16, 25)
 
-        // TODO uncomment this assert after implementing the extension function
-        // assertEquals(expected, input.squareNumbers())
+        assertEquals(expected, input.squareNumbers())
     }
 
     @Test
     fun `isPalindrome extension function`() {
-        // TODO uncomment these asserts after implementing the extension function
-//        assertTrue("racecar".isPalindrome())
-//        assertTrue("radar".isPalindrome())
-//        assertTrue("civic".isPalindrome())
-//        assertFalse("pancakes".isPalindrome())
-//        assertFalse("hello".isPalindrome())
+        assertTrue("racecar".isPalindrome())
+        assertTrue("radar".isPalindrome())
+        assertTrue("civic".isPalindrome())
+        assertFalse("pancakes".isPalindrome())
+        assertFalse("hello".isPalindrome())
     }
 
     @Test
     fun `capitalizeWords extension function`() {
-        // TODO uncomment these asserts after implementing the extension function
-//        assertEquals("Hello World", "hello world".capitalizeWords())
-//        assertEquals("single", "Single".capitalizeWords())
-//        assertEquals("This Is Amazing", "this is amazing".capitalizeWords())
+        assertEquals("Hello World", "hello world".capitalizeWords())
+        assertEquals("This Is Amazing", "this is amazing".capitalizeWords())
     }
 }
