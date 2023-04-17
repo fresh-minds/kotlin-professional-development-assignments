@@ -75,7 +75,7 @@ Run a single test file:
 ```
 
 ## TODO
-
+- [ ] Fix assert imports, only use stdlib or only use junit ones
 - [ ] Setup renovate/dependabot?
 - [ ] Add requirements (java 11)
 - [ ] Add license

@@ -1,6 +1,8 @@
 package nl.freshminds
 
 /**
+ * There are no tests available for this assignment.
+ *
  * 1. Create an [Animal] class which accepts the following properties in the
  * primary constructor: name, age, and species.
  *

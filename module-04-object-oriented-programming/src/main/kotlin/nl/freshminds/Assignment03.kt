@@ -1,6 +1,8 @@
 package nl.freshminds
 
 /**
+ * There are no tests available for this assignment.
+ *
  * Refactor the [Service] class in such a way that the [restTemplate] can be declared as 'private val' instead
  * of 'private lateinit var'.
  */

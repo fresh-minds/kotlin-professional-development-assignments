@@ -1,6 +1,8 @@
 package nl.freshminds
 
 /**
+ * There are no tests available for this assignment.
+ *
  * 1. Create a [Camera] interface with 2 methods: [takePicture] and [autoAdjustWhiteBalance]
  *
  * 2. Create a class [Iphone] which accepts a property [type] (11, 12, 13, etc) in the primary constructor.
