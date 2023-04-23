@@ -1,6 +1,8 @@
 package nl.freshminds
 
 /**
+ * There are no tests available for this assignment.
+ *
  * [HttpClient.get] returns a 200 success status code about 25% of the time.
  * [HttpClient.post] returns a 200 success status code about 10% of the time.
  *

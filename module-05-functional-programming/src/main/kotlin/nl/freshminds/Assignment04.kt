@@ -3,6 +3,8 @@ package nl.freshminds
 import java.util.UUID
 
 /**
+ * There are no tests available for this assignment.
+ *
  * Note: This can be a tricky question. If you get stuck, ask for help or move on to the next one.
  *
  * Write a generic function called [memoize] that takes in a function 'T -> R' and returns a memoized

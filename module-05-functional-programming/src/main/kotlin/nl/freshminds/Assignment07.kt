@@ -1,6 +1,8 @@
 package nl.freshminds
 
 /**
+ * There are no tests available for this assignment.
+ *
  * 1. Refactor [createTitle] so you can write it as a single expression function. Use the [apply] and [let]
  * scope functions your solution.
  *

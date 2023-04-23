@@ -3,6 +3,8 @@ package nl.freshminds
 import java.util.UUID
 
 /**
+ * There are no tests available for this assignment.
+ *
  * Note: This can be a tricky question. If you get stuck, ask for help or move on to the next one.
  *
  * 1. Write an extension function on [Either<A,B>] called [mapLeft] which accepts a function as an argument of type

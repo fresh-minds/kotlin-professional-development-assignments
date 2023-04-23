@@ -1,6 +1,8 @@
 package nl.freshminds
 
 /**
+ * There are no tests available for this assignment.
+ *
  * 1. Write a higher order extension function on [List<Int>] named [printIf]. The function should
  * accept a [predicate] function of Int -> Boolean. The implementation should print all integers that
  * match the predicate.
