@@ -18,6 +18,20 @@ import java.util.UUID
  *  Uncomment the main function to validate your solution.
  */
 
+fun <A, B, C> Either<A, B>.mapLeft(block: (A) -> C): Either<C, B> {
+    return when(this) {
+        is Either.Left -> Either.Left(block(value))
+        is Either.Right -> this
+    }
+}
+
+fun <A, B> Either<A, B>.fold(ifLeft: (A) -> Unit, ifRight: (B) -> Unit) {
+    when(this) {
+        is Either.Left -> ifLeft(value)
+        is Either.Right -> ifRight(value)
+    }
+}
+
 // The Either is a data type representing values of either A OR B. It can only be an instance of
 // Either.Left or Either.Right.
 sealed class Either<out A, out B> {
@@ -25,17 +39,17 @@ sealed class Either<out A, out B> {
     data class Right<out B>(val value: B) : Either<Nothing, B>()
 }
 
-//fun main() {
-//    createRandomEither()
-//        .mapLeft { "version = ${it.version()}, uuid = $it" }
-//        .fold(
-//            ifLeft = { println("Got a left with value: $it") },
-//            ifRight = { println("Got a right with value: $it") }
-//        )
-//}
-//
-//fun createRandomEither() = if ((0..1000).random() > 500) {
-//    Either.Left(UUID.randomUUID())
-//} else {
-//    Either.Right(404)
-//}
+fun main() {
+    createRandomEither()
+        .mapLeft { "version = ${it.version()}, uuid = $it" }
+        .fold(
+            ifLeft = { println("Got a left with value: $it") },
+            ifRight = { println("Got a right with value: $it") }
+        )
+}
+
+fun createRandomEither() = if ((0..1000).random() > 500) {
+    Either.Left(UUID.randomUUID())
+} else {
+    Either.Right(404)
+}
