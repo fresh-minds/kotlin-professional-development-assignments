@@ -14,6 +14,7 @@ package nl.freshminds
  *     saveName("Fresh Minds")
  *     saveAge(3)
  *     saveCity("Leiden")
+ * }
  * ```
  */
 
