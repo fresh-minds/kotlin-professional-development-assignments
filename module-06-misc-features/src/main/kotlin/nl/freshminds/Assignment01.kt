@@ -11,15 +11,15 @@ class Subscriber<T>(
     val eventType: Class<T>
 ) {
     companion object {
-        fun <T> create(queue: String, eventType: Class<T>): Subscriber<T> {
-            return Subscriber(queue, eventType)
+        inline fun <reified T> create(queue: String): Subscriber<T> {
+            return Subscriber(queue, T::class.java)
         }
     }
 }
 
 fun main() {
-    val priceSubscriber = Subscriber.create("price-changes", PriceChanged::class.java)
-    val stockSubscriber = Subscriber.create("stock-updates", StockUpdated::class.java)
+    val priceSubscriber = Subscriber.create<PriceChanged>("price-changes")
+    val stockSubscriber = Subscriber.create<StockUpdated>("stock-updates")
 }
 
 object PriceChanged
