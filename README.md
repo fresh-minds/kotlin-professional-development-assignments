@@ -42,7 +42,7 @@ To build and test the project, simply run the following command:
 ./gradlew build
 ```
 
-However, there's a catch! Running the build command on the `main` branch will result in test errors. Don't panic - this is totally normal. 
+**However, there's a catch!** Running the build command on the `main` branch will result in test errors. Don't panic - this is totally normal. 
 The tests won't pass until you've completed the assignments. To make the build pass, simply exclude the tests like this:
 
 ```bash
@@ -79,4 +79,3 @@ Run a single test file:
 - [ ] Add one or 2 big assignments
 - [ ] Setup renovate/dependabot?
 - [ ] Add requirements (java 11)
-- [ ] Add license
