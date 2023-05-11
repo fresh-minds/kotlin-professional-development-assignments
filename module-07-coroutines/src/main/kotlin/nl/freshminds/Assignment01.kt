@@ -1,6 +1,7 @@
 package nl.freshminds
 
 import kotlinx.coroutines.delay
+import kotlin.time.Duration.Companion.seconds
 
 /**
  * There are no tests available for this assignment.
@@ -19,6 +20,6 @@ fun main() {
 }
 
 suspend fun suspendingPrintThread() {
-    delay(1000)
+    delay(1.seconds)
     println(Thread.currentThread().name)
 }
