@@ -26,6 +26,3 @@ suspend fun publishMessage(message: String): Result {
 enum class Result {
     SUCCESS, FAILURE
 }
-
-
-
