@@ -1,11 +1,9 @@
 package nl.freshminds
 
-import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.time.LocalDate
 import kotlin.math.exp
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
 
 class Assignment05Test {
 
@@ -16,7 +14,7 @@ class Assignment05Test {
         val tomorrow = today.plusDays(1)
 
         // TODO uncomment this assert after implementing the extension function
-        // assertTrue(today.isBetween(yesterday, tomorrow))
+//         assertTrue(today.isBetween(yesterday, tomorrow))
     }
 
     @Test
@@ -25,7 +23,7 @@ class Assignment05Test {
         val expected = listOf(1, 4, 9, 16, 25)
 
         // TODO uncomment this assert after implementing the extension function
-        // assertEquals(expected, input.squareNumbers())
+//         assertEquals(expected, input.squareNumbers())
     }
 
     @Test

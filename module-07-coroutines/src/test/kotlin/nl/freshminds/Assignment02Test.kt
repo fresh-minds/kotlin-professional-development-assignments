@@ -1,10 +1,10 @@
 package nl.freshminds
 
 import kotlinx.coroutines.runBlocking
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import kotlin.system.measureTimeMillis
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
 
 class Assignment02Test {
 

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 import java.time.DayOfWeek
 
 
-import kotlin.test.assertEquals
+import org.junit.jupiter.api.Assertions.assertEquals
 
 class Assignment04Test {
 
