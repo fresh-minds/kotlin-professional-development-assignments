@@ -1,10 +1,8 @@
 package nl.freshminds
 
-import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.time.LocalDate
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
 
 class Assignment05Test {
 

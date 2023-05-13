@@ -1,11 +1,10 @@
 package nl.freshminds
 
+
 import kotlinx.datetime.LocalDate
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.time.DayOfWeek
-
-
-import kotlin.test.assertEquals
 
 class Assignment04Test {
 
