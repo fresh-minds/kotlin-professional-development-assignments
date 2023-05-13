@@ -6,7 +6,7 @@ solution is complete by, as a minimum, indicating that it works correctly agains
 
 The code you write should be of production quality, and most importantly, it should be something you are proud of.
 
-## Description
+## Requirements
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
 
