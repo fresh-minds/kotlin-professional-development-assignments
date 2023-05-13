@@ -1,4 +1,6 @@
 package nl.freshminds
 
-class MarsRover {
-}
+/**
+ * See MarsRover.md for instructions.
+ */
+class MarsRover

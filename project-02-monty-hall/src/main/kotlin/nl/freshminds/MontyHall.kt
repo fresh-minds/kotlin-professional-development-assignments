@@ -1,4 +1,6 @@
 package nl.freshminds
 
-class MontyHall {
-}
+/**
+ * See MontyHall.md for instructions.
+ */
+class MontyHall
