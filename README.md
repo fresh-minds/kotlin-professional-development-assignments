@@ -76,5 +76,4 @@ Run a single test file:
 
 ## TODO
 - [ ] Add one or 2 big assignments
-- [ ] Setup renovate/dependabot?
 - [ ] Add requirements (java 17)
