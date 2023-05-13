@@ -76,5 +76,4 @@ Run a single test file:
 ```
 
 ## TODO
-- [ ] Add one or 2 big assignments
 - [ ] Add requirements (java 17)
