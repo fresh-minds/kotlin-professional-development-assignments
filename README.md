@@ -108,7 +108,3 @@ Run a single test file:
 ```
 ./gradlew :module-01:test --tests '*Assignment02Test'
 ```
-
-## TODO
-
-- [ ] Add requirements (java 17)
