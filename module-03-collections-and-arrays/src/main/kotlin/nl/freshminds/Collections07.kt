@@ -1,7 +1,7 @@
 package nl.freshminds
 
 /**
- * Return the average lap number in which a driver set their fastest lap of the race
+ * Return the average lap number in which a driver set their fastest lap of the race.
  */
 fun averageLapInWhichADriverSetTheirFastestLap(race: Race): Double {
     TODO()

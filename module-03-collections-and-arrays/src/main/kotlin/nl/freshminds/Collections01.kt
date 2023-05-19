@@ -1,7 +1,7 @@
 package nl.freshminds
 
 /**
- * Find the amount of races held in the 2023 season
+ * Find the amount of races held in the 2023 season.
  */
 fun amountOfRacesIn2023(races: List<Race>): Int {
     TODO()

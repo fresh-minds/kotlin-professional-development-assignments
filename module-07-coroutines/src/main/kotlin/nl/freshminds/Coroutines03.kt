@@ -7,8 +7,8 @@ import kotlin.time.Duration.Companion.seconds
  * Implement [processStockUpdateEvent].
  *
  * Requirements:
- * - Update the database first and [fetchCustomersOnWaitingList] afterward (sequentially)
- * - Sent out the emails the customers concurrently
+ * - Update the database first and [fetchCustomersOnWaitingList] afterward (sequentially).
+ * - Sent out the emails the customers concurrently.
  * - The total execution time of the function should be a little over 5 seconds.
  */
 

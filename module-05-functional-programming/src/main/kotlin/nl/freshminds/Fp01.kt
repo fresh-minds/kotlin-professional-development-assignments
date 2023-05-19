@@ -9,5 +9,5 @@ package nl.freshminds
  *
  * 2. Refactor [printIf] so it works with all types of lists. In other words, make it an extension on [List<T>].
  *
- * 3. Write a main function and invoke printIf a couple of times on different types of lists
+ * 3. Write a main function and invoke printIf a couple of times on different types of lists.
  */

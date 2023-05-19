@@ -7,7 +7,7 @@ package nl.freshminds
  * primary constructor: name, age, and species.
  *
  * 2. Create a [Mammal] class which is a subclass of [Animal]. The [Mammal] class should have an
- * additional property for the type of mammal (e.g. carnivore, herbivore, etc.)
+ * additional property for the type of mammal (e.g. carnivore, herbivore, etc).
  *
  * 3. Create a [Bird] class which is a subclass of [Animal]. The [Bird] class should have an
  * additional property for the type of bird (e.g. raptor, waterfowl, etc.) and a property that specifies
