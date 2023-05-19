@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Assignment01Test {
+class TypeSystem01Test {
 
     @Test
     fun `a simple test for convertToLong`() {

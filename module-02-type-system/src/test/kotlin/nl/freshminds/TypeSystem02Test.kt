@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
 
-class Assignment02Test {
+class TypeSystem02Test {
 
     @Test
     fun `return name of the sub sub folder if it exists`() {

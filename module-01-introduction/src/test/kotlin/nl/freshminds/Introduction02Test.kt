@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Assignment02Test {
+class Introduction02Test {
 
     @Test
     fun `basic fizzBuzz test cases`() {

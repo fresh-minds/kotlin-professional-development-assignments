@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Assignment05Test {
+class Collections05Test {
 
     @Test
     fun `group constructors by nationality`() {

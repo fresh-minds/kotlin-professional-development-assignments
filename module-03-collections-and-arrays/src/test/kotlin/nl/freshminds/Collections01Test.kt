@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.assertEquals
 
-class Assignment01Test {
+class Collections01Test {
 
     @Test
     fun `total amount of races in the 2023 season`() {

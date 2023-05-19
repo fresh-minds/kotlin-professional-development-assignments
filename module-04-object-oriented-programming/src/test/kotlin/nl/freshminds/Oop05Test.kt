@@ -1,11 +1,9 @@
 package nl.freshminds
 
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.time.LocalDate
-import kotlin.math.exp
 
-class Assignment05Test {
+class Oop05Test {
 
     @Test
     fun `isBetween extension function`() {

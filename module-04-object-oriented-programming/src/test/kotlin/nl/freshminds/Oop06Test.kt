@@ -1,11 +1,8 @@
 package nl.freshminds
 
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
-import java.time.LocalDate
-import org.junit.jupiter.api.Assertions.assertFalse
 
-class Assignment06Test {
+class Oop06Test {
 
     @Test
     fun `isPrime extension function`() {

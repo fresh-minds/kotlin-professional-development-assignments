@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import kotlin.system.measureTimeMillis
 
-class Assignment02Test {
+class Coroutines02Test {
 
     @Test
     fun `publish succeeds for every message`() {

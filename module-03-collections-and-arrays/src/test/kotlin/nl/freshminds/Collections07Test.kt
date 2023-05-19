@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull
 
-class Assignment07Test {
+class Collections07Test {
 
     @Test
     fun `average lap in which the fastest lap was set`() {

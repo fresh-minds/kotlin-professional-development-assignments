@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.assertEquals
 
-class Assignment06Test {
+class Collections06Test {
 
     @Test
     fun `total amount of points awarded`() {

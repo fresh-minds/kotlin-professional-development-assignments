@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Assignment05Test {
+class Introduction05Test {
 
     @Test
     fun `calculate the first n fibonacci numbers`() {

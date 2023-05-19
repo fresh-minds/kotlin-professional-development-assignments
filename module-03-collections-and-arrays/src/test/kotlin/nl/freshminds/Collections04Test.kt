@@ -7,7 +7,7 @@ import java.time.DayOfWeek
 
 import org.junit.jupiter.api.Assertions.assertEquals
 
-class Assignment04Test {
+class Collections04Test {
 
     @Test
     fun `family name to name length`() {

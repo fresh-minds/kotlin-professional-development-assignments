@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
-class Assignment02Test {
+class Collections02Test {
 
     @Test
     fun `check if all races are from a given season`() {

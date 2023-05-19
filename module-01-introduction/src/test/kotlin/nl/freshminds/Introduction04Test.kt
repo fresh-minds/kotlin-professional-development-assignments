@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-class Assignment04Test {
+class Introduction04Test {
 
     @Test
     fun `divisible from 1 to 20`() {

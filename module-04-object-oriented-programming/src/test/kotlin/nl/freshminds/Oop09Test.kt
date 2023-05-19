@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class Assignment09Test {
+class Oop09Test {
     @Test
     fun `create instances of Rocket class`() {
         val rocket1 = Rocket(name = "Big Rocket", fuelType = "Electric", engineCount = 3)

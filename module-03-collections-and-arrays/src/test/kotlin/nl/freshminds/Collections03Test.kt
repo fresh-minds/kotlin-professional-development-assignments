@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-class Assignment03Test {
+class Collections03Test {
 
     @Test
     fun `count results by status`() {

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.time.LocalDate
 
-class Assignment08Test {
+class Oop08Test {
     @Test
     fun `discount validations`() {
         val today = LocalDate.now()

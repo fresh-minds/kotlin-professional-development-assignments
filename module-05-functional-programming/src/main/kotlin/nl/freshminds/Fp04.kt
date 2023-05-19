@@ -1,7 +1,5 @@
 package nl.freshminds
 
-import java.util.UUID
-
 /**
  * There are no tests available for this assignment.
  *

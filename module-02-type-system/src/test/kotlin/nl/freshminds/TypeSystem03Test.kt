@@ -3,7 +3,7 @@ package nl.freshminds
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Assignment03Test {
+class TypeSystem03Test {
 
     @Test
     fun `cast to folder and get name or default`() {

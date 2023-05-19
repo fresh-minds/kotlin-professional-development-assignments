@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 import kotlin.system.measureTimeMillis
 import org.junit.jupiter.api.Assertions.assertTrue
 
-class Assignment03Test {
+class Coroutines03Test {
 
     @Test
     fun `processStockUpdateEvent should take around 5 seconds`() {

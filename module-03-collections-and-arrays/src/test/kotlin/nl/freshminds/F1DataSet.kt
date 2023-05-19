@@ -1,6 +1,5 @@
 package nl.freshminds
 
-import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 
 private const val PATH_TO_RACES_JSON = "/races.json"
