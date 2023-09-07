@@ -1,9 +1,9 @@
-![assignments badge](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/build-main.yml/badge.svg)
-![solutions badge](https://github.com/fresh-minds/kotlin-foundation-assignments/actions/workflows/build-and-test-solutions.yml/badge.svg)
-![dependabot badge](https://badgen.net/github/dependabot/fresh-minds/kotlin-foundation-assignments)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/fresh-minds/kotlin-foundation-assignments/blob/main/LICENSE)
+![assignments badge](https://github.com/fresh-minds/kotlin-professional-development-assignments/actions/workflows/build-main.yml/badge.svg)
+![solutions badge](https://github.com/fresh-minds/kotlin-professional-development-assignments/actions/workflows/build-and-test-solutions.yml/badge.svg)
+![dependabot badge](https://badgen.net/github/dependabot/fresh-minds/kotlin-professional-development-assignments)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/fresh-minds/kotlin-professional-development-assignments/blob/main/LICENSE)
 
-# Kotlin Foundation Assignments
+# Kotlin Professional Development
 
 This repository is your go-to source for all assignments you'll be tackling throughout the training.
 
