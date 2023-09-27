@@ -3,8 +3,8 @@ package nl.freshminds
 /**
  * There are no tests available for this assignment.
  *
- * The updates in [updateDatabase] happen in a transaction. Having to write this transaction logic every
- * time is tedious and error-prone.
+ * The updates in [updateDatabase] happen in a transaction. Having to write this transaction logic
+ * (begin, commit, rollback) every time is tedious and error-prone.
  *
  * Write a HOF named [executeInTransaction] that extracts the transaction logic. In the end you should be able to
  * refactor [updateDatabase] to this:

@@ -10,7 +10,7 @@ import kotlin.time.Duration.Companion.seconds
  *
  * 2. Launch 10000 [suspendingPrintThread] coroutines concurrently.
  *
- * 3. Try passing different dispatchers to 'launch' and observe the results.
+ * 3. Try using different dispatchers and observe the results.
  *
  * 4. Replace [delay] by [Thread.sleep] in [suspendingPrintThread] and observe the results.
  */
