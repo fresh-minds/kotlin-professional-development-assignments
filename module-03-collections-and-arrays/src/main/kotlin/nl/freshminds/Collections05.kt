@@ -11,7 +11,7 @@ fun groupConstructorsByNationality(results: List<Result>): Map<String, List<Stri
 }
 
 /**
- * Return a pair where first contains a list of all results with the 'Finished' status, and second
+ * Return a pair where [first] contains a list of all results with the 'Finished' status, and [second]
  * contains all other results.
  */
 fun partitionByStatus(results: List<Result>): Pair<List<Result>, List<Result>> {
