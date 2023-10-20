@@ -7,7 +7,7 @@ class Collections01Test {
 
     @Test
     fun `total amount of races in the 2023 season`() {
-        assertEquals(3, amountOfRacesIn2023(F1DataSet.races))
+        assertEquals(6, amountOfRacesIn2023(F1DataSet.races))
     }
 
     @Test
@@ -16,7 +16,10 @@ class Collections01Test {
             setOf(
                 "Bahrain International Circuit",
                 "Jeddah Corniche Circuit",
-                "Albert Park Grand Prix Circuit"
+                "Albert Park Grand Prix Circuit",
+                "Baku City Circuit",
+                "Miami International Autodrome",
+                "Circuit de Monaco"
             ), circuitNames(F1DataSet.races)
         )
     }

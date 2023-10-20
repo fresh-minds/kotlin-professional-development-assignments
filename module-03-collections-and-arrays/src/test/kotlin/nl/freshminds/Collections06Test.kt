@@ -25,6 +25,6 @@ class Collections06Test {
     @Test
     fun `total amount of points for driver`() {
         val result = totalPointsForDriver("Verstappen", F1DataSet.races)
-        assertEquals(69, result)
+        assertEquals(138, result)
     }
 }
