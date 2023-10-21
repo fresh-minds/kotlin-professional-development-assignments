@@ -4,7 +4,7 @@ package nl.freshminds
  * Find the amount of races held in the 2023 season.
  */
 fun amountOfRacesIn2023(races: List<Race>): Int {
-    return races.filter { it.season == 2023 }.size
+    return races.count { it.season == 2023 }
 }
 
 /**
