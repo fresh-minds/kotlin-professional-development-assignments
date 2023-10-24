@@ -1,7 +1,7 @@
 package nl.freshminds
 
 /**
- * Implement the [fizzBuzz] function so that the tests in 'Assignment02Test.kt' pass.
+ * Implement the [fizzBuzz] function so that the tests in 'Introduction02Test.kt' pass.
  *
  * Requirements:
  * - Return "Fizz" if [input] is a multiple of 3.
