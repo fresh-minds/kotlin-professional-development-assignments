@@ -11,7 +11,7 @@ package nl.freshminds
  *
  * 2. Write an extension function on [Either<A,B>] called [fold] which accepts 2 functions as arguments. The first
  * is called [ifLeft] of type (A) -> Unit, the second is called [ifRight] of type (B) -> Unit. Invoke [ifLeft] if
- * you are dealing with an instance of [Either.Left] and invoke [Either.Right] if you have an instance of [Either.Right].
+ * you are dealing with an instance of [Either.Left] and invoke [ifRight] if you have an instance of [Either.Right].
  *
  *  Uncomment the main function to validate your solution.
  */
