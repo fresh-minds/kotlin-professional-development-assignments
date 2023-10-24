@@ -8,7 +8,7 @@ import kotlin.time.Duration.Companion.seconds
  *
  * Requirements:
  * - Update the database first and [fetchCustomersOnWaitingList] afterward (sequentially).
- * - Sent out the emails the customers concurrently.
+ * - Send out the emails the customers concurrently.
  * - The total execution time of the function should be a little over 5 seconds.
  */
 
@@ -27,7 +27,7 @@ suspend fun fetchCustomersOnWaitingList(productId: Int): List<CustomerId> {
         1 -> listOf(CustomerId("a"), CustomerId("b"), CustomerId("c"), CustomerId("d"))
         10 -> listOf(CustomerId("f"), CustomerId("g"))
         100 -> listOf(CustomerId("r"))
-        else -> emptyList()
+        else -> listOf(CustomerId("x"))
     }
 }
 
