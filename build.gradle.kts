@@ -30,7 +30,7 @@ allprojects {
         }
     }
 
-    val junitVersion = "5.10.2"
+    val junitVersion = "5.10.3"
 
     dependencies {
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
