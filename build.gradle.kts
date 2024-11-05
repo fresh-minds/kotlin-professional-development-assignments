@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.23"
+    kotlin("jvm") version "2.0.21"
 }
 
 group = "nl.freshminds"
@@ -30,7 +30,7 @@ allprojects {
         }
     }
 
-    val junitVersion = "5.10.2"
+    val junitVersion = "5.11.3"
 
     dependencies {
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
