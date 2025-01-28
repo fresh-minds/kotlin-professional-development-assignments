@@ -1,9 +1,9 @@
 package nl.freshminds
 
 import kotlinx.coroutines.runBlocking
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import kotlin.system.measureTimeMillis
-import org.junit.jupiter.api.Assertions.assertTrue
 
 class Coroutines03Test {
 

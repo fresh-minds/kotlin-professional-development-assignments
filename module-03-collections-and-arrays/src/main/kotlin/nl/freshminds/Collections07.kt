@@ -4,7 +4,8 @@ package nl.freshminds
  * Return the average lap number in which a driver set their fastest lap of the race.
  */
 fun averageLapInWhichADriverSetTheirFastestLap(race: Race): Double {
-    TODO()
+    return race.results.mapNotNull { it.fastestLap?.lap }
+        .average()
 }
 
 /**
@@ -12,5 +13,7 @@ fun averageLapInWhichADriverSetTheirFastestLap(race: Race): Double {
  * nationality exist.
  */
 fun driverWithShortestGivenName(nationality: String, drivers: List<Driver>): String? {
-    TODO("Hint: minByOrNull")
+    return drivers.filter { it.nationality == nationality }
+        .minByOrNull { it.givenName.length }
+        ?.givenName
 }

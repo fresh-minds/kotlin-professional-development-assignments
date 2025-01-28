@@ -9,3 +9,13 @@ package nl.freshminds
  *
  * 2. Add a main function and invoke the [next] method a couple of times and print the results.
  */
+
+object IdGenerator {
+    fun next(prefix: String = "") = prefix + (0..Int.MAX_VALUE).random()
+}
+
+fun main() {
+    println(IdGenerator.next())
+    println(IdGenerator.next(prefix = "abc"))
+    println(IdGenerator.next(prefix = "123-"))
+}

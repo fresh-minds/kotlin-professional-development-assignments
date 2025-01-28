@@ -9,3 +9,9 @@ package nl.freshminds
  *
  * D: Are you able to write the `sumTimesFive` function as a single expression function?
  */
+fun main() {
+    val result = sumTimesFive(2, 3)
+    println("Result of sumTimesFive = $result")
+}
+
+private fun sumTimesFive(a: Int, b: Int) = (a + b) * 5

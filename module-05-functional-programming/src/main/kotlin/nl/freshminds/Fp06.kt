@@ -8,6 +8,16 @@ package nl.freshminds
  * in your solution.
  */
 
+fun prettyPrint(company: Company) {
+    with(company) {
+        println("$name is located in $city ($country), and has $amountOfEmployees employees")
+    }
+}
+
+fun main() {
+    prettyPrint(Company("Fresh Minds", 80, "Leiden", "The Netherlands"))
+}
+
 data class Company(
     val name: String,
     val amountOfEmployees: Int,

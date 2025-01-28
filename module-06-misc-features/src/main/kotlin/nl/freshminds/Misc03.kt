@@ -12,3 +12,22 @@ package nl.freshminds
  *
  * 3. Create a main function and give your infix functions a try.
  */
+
+infix fun Int.isMultipleOf(other: Int): Boolean {
+    return this % other == 0
+}
+
+data class Student(val name: String, val grade: Int) {
+    infix fun higherGradeThan(other: Student) = this.grade > other.grade
+}
+
+fun main() {
+    println(10 isMultipleOf 5)
+    println(11 isMultipleOf 5)
+
+    val student1 = Student("Bas", 1)
+    val student2 = Student("Bob", 9)
+
+    println(student1 higherGradeThan student2)
+    println(student2 higherGradeThan student1)
+}

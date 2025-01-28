@@ -7,29 +7,50 @@ package nl.freshminds
  * the respective value classes.
  */
 data class Book(
-    val title: String,
-    val isbn: String,
-    val publisher: String,
-    val type: String = "hardcover"
-) {
+    val title: Title,
+    val isbn: Isbn,
+    val publisher: Publisher,
+    val type: Type = Type("hardcover")
+)
+
+data class Ebook(
+    val title: Title,
+    val isbn: Isbn,
+    val publisher: Publisher,
+    val format: Format = Format(".epub")
+)
+
+@JvmInline
+value class Title(val value: String) {
     init {
-        require(title.isNotBlank()) { "title cannot be blank" }
-        require(isbn.length == 10) { "isbn should have a length of 10" }
-        require(publisher.isNotBlank()) { "publisher cannot be blank" }
-        require(type.isNotBlank()) { "type cannot be blank" }
+        require(value.isNotBlank()) { "title cannot be blank" }
     }
 }
 
-data class Ebook(
-    val title: String,
-    val isbn: String,
-    val publisher: String,
-    val format: String = ".epub"
-) {
+@JvmInline
+value class Isbn(val value: String) {
     init {
-        require(title.isNotBlank()) { "title cannot be blank" }
-        require(isbn.length == 10) { "isbn should have a length of 10" }
-        require(publisher.isNotBlank()) { "publisher cannot be blank" }
-        require(format.isNotBlank()) { "format cannot be blank" }
+        require(value.length == 10) { "isbn should have a length of 10" }
+    }
+}
+
+@JvmInline
+value class Publisher(val value: String) {
+    init {
+        require(value.isNotBlank()) { "publisher cannot be blank" }
+    }
+}
+
+@JvmInline
+value class Format(val value: String) {
+    init {
+        require(value.isNotBlank()) { "format cannot be blank" }
+    }
+}
+
+@JvmInline
+value class Type(val value: String) {
+    init {
+        require(value.isNotBlank()) { "type cannot be blank" }
     }
 }

@@ -7,5 +7,14 @@ package nl.freshminds
  * Implement [palindromicNumber] to find the largest palindrome made from the product of two 3-digit numbers.
  */
 fun palindromicNumber(): Int {
-    TODO()
+    var highest = 0
+    for (i in 100..999) {
+        for (j in 100..999) {
+            val result = i * j
+            if (result.toString() == result.toString().reversed()) {
+                highest = if (highest < result) result else highest
+            }
+        }
+    }
+    return highest
 }

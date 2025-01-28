@@ -7,5 +7,22 @@ package nl.freshminds
  * 1 to 20 without any remainder.
  */
 fun divisibleByAllNumbersFrom1to20(): Int {
-    TODO()
+    var number = 1
+    while (true) {
+        if (divisible(number)) {
+            println(number)
+            break
+        }
+        number++
+    }
+    return number
+}
+
+private fun divisible(number: Int): Boolean {
+    for (i in 1..20) {
+        if (number % i != 0) {
+            return false
+        }
+    }
+    return true
 }

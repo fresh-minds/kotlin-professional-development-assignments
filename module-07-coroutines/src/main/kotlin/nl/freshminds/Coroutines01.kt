@@ -1,6 +1,9 @@
 package nl.freshminds
 
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import kotlin.time.Duration.Companion.seconds
 
 /**
@@ -16,7 +19,11 @@ import kotlin.time.Duration.Companion.seconds
  */
 
 fun main() {
-
+    runBlocking {
+        repeat(1000) {
+            launch(Dispatchers.IO) { suspendingPrintThread() }
+        }
+    }
 }
 
 suspend fun suspendingPrintThread() {

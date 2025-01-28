@@ -17,3 +17,43 @@ package nl.freshminds
  * 3. Add a main method and create a couple of Movie instances. Use the copy function to create
  * variations of these instances.
  */
+data class Actor(
+    val name: String,
+    val role: String
+)
+
+data class Movie(
+    val title: String,
+    val director: String,
+    val year: Int,
+    val genres: List<String>,
+    val actors: List<Actor>
+)
+
+fun main() {
+    val avatar = Movie(
+        title = "Avatar",
+        director = "James Cameron",
+        year = 2009,
+        genres = listOf("ScienceFiction", "Adventure"),
+        actors = listOf(
+            Actor(
+                name = "Sam Worthington",
+                role = "Jake Sully"
+            ),
+            Actor(
+                name = "Joel David Moore",
+                role = "Norm Spellman"
+            )
+        )
+    )
+
+    val avatarSequel = avatar.copy(
+        title = "Avatar: The Way of Water",
+        year = 2022,
+        actors = avatar.actors + Actor("Bailey Bass", "Tsireya")
+    )
+
+    println(avatar)
+    println(avatarSequel)
+}

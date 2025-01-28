@@ -9,5 +9,21 @@ package nl.freshminds
  *
  * 2. Refactor [printIf] so it works with all types of lists. In other words, make it an extension on [List<T>].
  *
- * 3. Write a main function and invoke printIf a couple of times on different types of lists.
+ * 3. Write a main function and invoke printIf a couple of times on different types of lists
  */
+
+fun <T> List<T>.printIf(predicate: (T) -> Boolean) {
+    forEach { element ->
+        if (predicate(element)) {
+            println(element)
+        }
+    }
+}
+
+fun main() {
+    listOf(1, 2, 3, 4, 5, 6)
+        .printIf { it % 2 == 0 }
+
+    listOf('A', 'a', 'b', 'C')
+        .printIf { it.isUpperCase() }
+}

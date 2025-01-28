@@ -5,10 +5,6 @@ package nl.freshminds
  */
 data class Rocket(
     val name: String,
-    val fuelType: String,
-    val engineCount: Int
-) {
-    constructor(name: String): this(name, "Liquid Oxygen", 1)
-    constructor(name: String, fuelType: String): this(name, fuelType, 1)
-    constructor(name: String, engineCount: Int): this(name, "Liquid Oxygen", engineCount)
-}
+    val fuelType: String = "Liquid Oxygen",
+    val engineCount: Int = 1
+)

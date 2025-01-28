@@ -1,14 +1,11 @@
 package nl.freshminds
 
 import kotlinx.datetime.LocalDate
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.time.DayOfWeek
 
-
-import org.junit.jupiter.api.Assertions.assertEquals
-
 class Collections04Test {
-
     @Test
     fun `family name to name length`() {
         val expected = mapOf(

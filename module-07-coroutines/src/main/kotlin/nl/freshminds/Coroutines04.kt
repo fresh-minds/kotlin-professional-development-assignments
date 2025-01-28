@@ -1,6 +1,10 @@
 package nl.freshminds
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
 import kotlin.time.Duration.Companion.seconds
@@ -15,11 +19,20 @@ import kotlin.time.Duration.Companion.seconds
  * should run in this context. (Hint: you can do this via [withContext]).
  */
 
+suspend fun <T, R> Iterable<T>.parallelMap(
+    context: CoroutineContext = Dispatchers.Default,
+    transform: suspend (T) -> R
+): List<R> {
+    return withContext(context) {
+        map { async { transform(it) } }.awaitAll()
+    }
+}
+
 fun main() {
-//    runBlocking {
-//        (1..1000).parallelMap { addPrefix("foo", it) }
-//            .also { println(it) }
-//    }
+    runBlocking {
+        (1..1000).parallelMap { addPrefix("foo", it) }
+            .also { println(it) }
+    }
 }
 
 suspend fun addPrefix(prefix: String, number: Int): String {

@@ -8,16 +8,20 @@ package nl.freshminds
  *
  * 2. Use also [also] to log the result after every step in the processing chain.
  */
-fun createTitle(): String {
-    val titleFragments = mutableListOf<String>()
-    titleFragments.add("The")
-    titleFragments.add("Game")
-    titleFragments.add("Of")
-    titleFragments.add("Thrones")
+fun createTitle() = mutableListOf<String>().apply {
+    add("The")
+    add("Game")
+    add("Of")
+    add("Thrones")
+}
+    .also { println("After step 1: $it" ) }
+    .joinToString(" ")
+    .also { println("After step 2: $it" ) }
+    .removePrefix("The ")
+    .also { println("After step 3: $it" ) }
+    .let { "'$it'" }
+    .also { println("After step 4: $it" ) }
 
-    val title = titleFragments.joinToString(" ")
-
-    val titleWithoutPrefix = title.removePrefix("The ")
-
-    return "'$titleWithoutPrefix'"
+fun main() {
+    createTitle()
 }

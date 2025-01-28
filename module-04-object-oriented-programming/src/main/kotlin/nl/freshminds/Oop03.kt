@@ -6,9 +6,9 @@ package nl.freshminds
  * Refactor the [Service] class in such a way that the [restTemplate] can be declared as 'private val' instead
  * of 'private lateinit var'.
  */
-class Service {
-    private lateinit var restTemplate: RestTemplate
-
+class Service(
+    private val restTemplate: RestTemplate
+) {
     fun doSomething() = restTemplate.fetch()
 }
 

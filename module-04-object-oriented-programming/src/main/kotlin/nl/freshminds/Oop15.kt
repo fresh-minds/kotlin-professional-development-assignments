@@ -21,3 +21,32 @@ interface Mechanic {
 
     fun fixBoardComputer()
 }
+
+class SeniorMechanic(private val junior: JuniorMechanic) : Mechanic by junior {
+    override fun swapEngine() = println("Senior swapping the engine")
+}
+
+class JuniorMechanic : Mechanic {
+    override fun changeTires() = println("changing tires")
+
+    override fun cleanCar() = println("cleaning car")
+
+    override fun swapEngine() = println("swapping engine")
+
+    override fun fixBoardComputer() = println("fixing board computer")
+}
+
+fun main() {
+    val junior = JuniorMechanic()
+    val senior = SeniorMechanic(junior)
+
+    junior.changeTires()
+    junior.cleanCar()
+    junior.swapEngine()
+    junior.fixBoardComputer()
+
+    senior.changeTires()
+    senior.cleanCar()
+    senior.swapEngine()
+    senior.fixBoardComputer()
+}
