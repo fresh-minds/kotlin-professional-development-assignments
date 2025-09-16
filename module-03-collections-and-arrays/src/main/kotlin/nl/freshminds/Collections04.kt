@@ -1,7 +1,7 @@
 package nl.freshminds
 
+import kotlinx.datetime.DayOfWeek
 import kotlinx.datetime.LocalDate
-import java.time.DayOfWeek
 
 /**
  * Return a map from driver family name to the length of the family name.

@@ -19,6 +19,7 @@ import java.math.BigDecimal
  * companion object's factory methods.
  */
 
+@ConsistentCopyVisibility
 data class Pizza private constructor(
     val name: String,
     val size: Int,
