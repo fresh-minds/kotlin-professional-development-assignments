@@ -1,9 +1,9 @@
 package nl.freshminds
 
+import kotlinx.datetime.DayOfWeek
 import kotlinx.datetime.LocalDate
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import java.time.DayOfWeek
 
 class Collections04Test {
     @Test
