@@ -19,7 +19,7 @@ Feeling stuck? Don't worry, we've got your back. You can find solutions to every
 Keep in mind that there are often multiple ways to solve a problem, so it's a good idea to compare your solutions
 with the ones we've provided.
 
-## Before coming to the training
+## Before the training
 
 Want to hit the ground running on training day? Great! Here's what you need to do to make sure you're all set:
 
